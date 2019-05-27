@@ -154,6 +154,9 @@ a {
     color: #89b7ff;
 }
 
+.header-favorites {
+    display: none;
+}
 /* Header styles end */
 
 
@@ -212,44 +215,6 @@ a {
     width: 8.33333333%;
 }
 
-@media (max-width: 768px) {
-    .col-sm-12 {
-        width: 100%;
-    }
-    .col-sm-11 {
-        width: 91.66666667%;
-    }
-    .col-sm-10 {
-        width: 83.33333333%;
-    }
-    .col-sm-9 {
-        width: 75%;
-    }
-    .col-sm-8 {
-        width: 66.66666667%;
-    }
-    .col-sm-7 {
-        width: 58.33333333%;
-    }
-    .col-sm-6 {
-        width: 50%;
-    }
-    .col-sm-5 {
-        width: 41.66666667%;
-    }
-    .col-sm-4 {
-        width: 33.33333333%;
-    }
-    .col-sm-3 {
-        width: 25%;
-    }
-    .col-sm-2 {
-        width: 16.66666667%;
-    }
-    .col-sm-1 {
-        width: 8.33333333%;
-    }
-}
 
 @media (max-width: 1280px) {
     .col-md-12 {
@@ -302,6 +267,73 @@ a {
     .nav__link {
         padding-top: 34px;
         padding-bottom: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    .col-sm-11 {
+        width: 91.66666667%;
+    }
+    .col-sm-10 {
+        width: 83.33333333%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-8 {
+        width: 66.66666667%;
+    }
+    .col-sm-7 {
+        width: 58.33333333%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-5 {
+        width: 41.66666667%;
+    }
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-2 {
+        width: 16.66666667%;
+    }
+    .col-sm-1 {
+        width: 8.33333333%;
+    }
+    .header-favorites {
+        display: inline-block;
+        padding: 25px 0;
+    }
+    .navigation__nav {
+        display: none;
+    }
+    .header-favorites__img {
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+    .header-favorites__link {
+        vertical-align: middle;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 11px;
+        font-size: 12px;
+    }
+    .navigation__menu {
+        display: inline-block;
+    }
+    .menu__text {
+        display: none;
     }
 }
 
