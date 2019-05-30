@@ -59,7 +59,7 @@
 /* Main styles start*/
 * {
     margin: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     font-size: 10px;
     font-family: 'GothamPro';
 }
@@ -78,8 +78,11 @@ a {
     font-size: 10px;
     line-height: 11px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: #ffffff;
+}
+
+.navigation {
+    text-transform: uppercase;
 }
 
 .navigation__nav {
@@ -106,6 +109,10 @@ a {
     margin-right: 11px;
     display: inline-block;
     transition: all 0.3s ease-out;
+}
+
+.nav__link:first-child {
+    padding-left: 0;
 }
 
 .nav__link:hover {
@@ -157,6 +164,236 @@ a {
 .header-favorites {
     display: none;
 }
+
+.subheader {
+    background: #ffffff;
+}
+
+.subheader__userarea {
+    display: inline-block;
+}
+
+.subheader__userarea-right {
+    text-align: right;
+}
+
+.phone {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    line-height: 10px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.userarea__phone {
+    width: 180px;
+    margin-right: 30px;
+}
+
+.phone__img {
+    float: left;
+    padding-right: 11px;
+    transition: all 0.3s ease-out;
+}
+
+.phone__text_opacity {
+    opacity: 0.5;
+}
+
+.phone__text_uppercase {
+    text-transform: uppercase;
+}
+
+.phone__link {
+    line-height: 14px;
+    transition: all 0.3s ease-out;
+}
+
+.phone__link_black {
+    font-size: 15px;
+    color: #000000;
+}
+
+.phone:hover .phone__img {
+    fill: #89b7ff;
+}
+.phone:hover .phone__link {
+    color: #89b7ff;
+}
+
+.email {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    line-height: 10px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.userarea__email {
+    width: 140px;
+}
+
+.email__img {
+    float: left;
+    padding-right: 11px;
+    transition: all 0.3s ease-out;
+    padding-top: 5px;
+}
+
+.email__text_opacity {
+    opacity: 0.5;
+}
+
+.email__link {
+    line-height: 18px;
+    transition: all 0.3s ease-out;
+}
+
+.email__link_black {
+    font-size: 15px;
+    color: #000000;
+    text-transform: none;
+}
+
+.email:hover .email__img {
+    fill: #89b7ff;
+}
+.email:hover .email__link {
+    color: #89b7ff;
+}
+
+.subheader__logo {
+    display: inline-block;
+}
+
+.subheader__logo_dark-bg {
+    background: #F3F3F3;
+}
+
+.subheader-logo__img {
+    padding-top: 17px;
+    padding-lefT: 16px;
+    padding-bottom: 22px;
+    padding-right: 13px;
+}
+
+.signup {
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.userarea__signup {
+    width: 190px;
+    margin-left: 110px;
+}
+
+.signup__img-right {
+    float: right;
+    padding-left: 11px;
+    transition: all 0.3s ease-out;
+}
+
+.signup__text_opacity {
+    opacity: 0.5;
+}
+
+.signup__link {
+    line-height: 18px;
+    transition: all 0.3s ease-out;
+}
+
+.signup__link_black {
+    font-size: 15px;
+    color: #000000;
+}
+
+.signup:hover .signup__img-right {
+    fill: #89b7ff;
+}
+.signup:hover .signup__link {
+    color: #89b7ff;
+}
+
+.shopping-cart {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    line-height: 10px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.userarea__shopping-cart {
+    width: 140px;
+    margin-left: 26px;
+}
+
+.shopping-cart__img-right {
+    float: right;
+    padding-left: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.shopping-cart__text_opacity {
+    opacity: 0.5;
+}
+
+.shopping-cart__link {
+    line-height: 18px;
+    transition: all 0.3s ease-out;
+}
+
+.shopping-cart__link_black {
+    font-size: 15px;
+    color: #000000;
+}
+
+.shopping-cart__link_uppercase {
+    text-transform: uppercase;
+}
+
+.shopping-cart__link:hover  {
+    color: #89b7ff;
+}
+
+.shopping-cart__basket {
+    padding-bottom: 10px;
+    position: absolute;
+    transform: translate(-100%, -70%);
+    display: inline-block;
+    transition: 0.1s ease-out 0.1s;
+}
+
+
+.shopping-cart__counter-link {
+    color: #fff;
+    background: #000;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 80px;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.shopping-cart__counter-link:after {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 33%;
+    border: 6px solid transparent;
+    border-top-color: #000;
+    border-bottom: 0;
+}
+
+.shopping-cart__basket-relative {
+    position: relative;
+}
 /* Header styles end */
 
 
@@ -176,6 +413,11 @@ a {
 .row {
     margin-right: -15px;
     margin-left: -15px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
 }
 
 .col-xs-12 {
