@@ -617,6 +617,25 @@ a {
     .menu__text {
         display: none;
     }
+    .f-column {
+        display: none;
+    }
+    .signup__img-right {
+        display: none;
+    }
+    .shopping-cart__img-right {
+        display: none;
+    }
+    .subheader-logo__img {
+        height: 50px;
+    }
+    .subheader__logo {
+        transform: translateX(-15%);
+    }
+    .userarea__shopping-cart {
+        margin-left: 20px;
+    }
+
 }
 
 @media (min-width: 1280px) {
