@@ -310,10 +310,15 @@ a {
     color: #000000;
 }
 
+.signup__link_black-span {
+    font-size: 15px;
+    color: #000000;
+}
+
 .signup:hover .signup__img-right {
     fill: #89b7ff;
 }
-.signup:hover .signup__link {
+.signup:hover .signup__link_black-span {
     color: #89b7ff;
 }
 
@@ -510,6 +515,41 @@ a {
         padding-top: 34px;
         padding-bottom: 36px;
     }
+    .signup__link_black-span {
+        display: none;
+    }
+    .signup__link:after {
+        content: 'Войти';
+    }
+    .shopping-cart__basket-relative {
+        display: none;
+    }
+    .f-column {
+        flex-direction: column;
+    }
+    .userarea__phone {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .userarea__email {
+        width: 100%;
+    }
+    .userarea__signup {
+        width: 45%;
+        margin-left: 10px;
+    }
+    .userarea__shopping-cart {
+        width: 50%;
+        margin-left: 10px;
+    }
+    .subheader-logo__img {
+        padding-top: 13px;
+        padding-lefT: 8px;
+        padding-bottom: 16px;
+        padding-right: 8px;
+    }
+
 }
 
 @media (max-width: 768px) {
