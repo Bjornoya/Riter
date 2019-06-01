@@ -920,6 +920,9 @@ a {
     .btn_white-text {
         font-size: 11px;
     }
+    .shop__container {
+        justify-content: space-around;
+    }
 
 }
 
@@ -1035,6 +1038,9 @@ a {
     }
     .advantages__advantages-item {
         width: 49%;
+    }
+    .shop__container {
+        justify-content: center;
     }
 
 }
