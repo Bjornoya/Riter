@@ -406,6 +406,7 @@ a {
 .assortment__container {
     displaY: flex;
     justify-content: space-between;
+    flex-flow: wrap;
     margin-top: 22px;
 }
 
@@ -673,6 +674,10 @@ a {
     }
     .userarea__shopping-cart {
         margin-left: 20px;
+    }
+    .assortment__assortment-item {
+        width: 30%;
+        margin-bottom: 25px;
     }
 
 }
