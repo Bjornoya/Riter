@@ -692,6 +692,29 @@ a {
         padding-bottom: 16px;
         padding-right: 8px;
     }
+    .slide__background {
+        width: 100%;
+    }
+    .slide__text {
+        top: 45%;
+    }
+    .slide__headline_black {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    .slide__text_black {
+        font-size: 19px;
+    }
+    .slide__btn {
+        padding-top: 19px;
+        padding-bottom: 14px;
+        padding-right: 20px;
+        padding-left: 18px;
+        top: 59.5%;
+    }
+    .btn_white-text {
+        font-size: 11px;
+    }
 
 }
 
@@ -781,6 +804,26 @@ a {
     .assortment__assortment-item {
         width: 30%;
         margin-bottom: 25px;
+    }
+    .slide__btn {
+        display: none;
+    }
+    .slide__headline_black {
+        font-size: 27px;
+        line-height: 50px;
+    }
+    .slider__checkbox-wrap {
+        top: 90.4%;
+        left: 9.5%;
+    }
+    .slide__text_black {
+        font-size: 16px;
+    }
+    .slider__checkbox-wrap {
+        top: 83.4%;
+    }
+    .slide__text {
+        top: 45%;
     }
 
 }
