@@ -597,6 +597,159 @@ a {
 /* Advantages styles end */
 
 
+/* Shop styles start */
+
+.shop-item {
+    font-family: "FuturaNew";
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.shop__shop-item {
+    position: relative;
+    display: inline-block;
+    max-width: 260px;
+    margin-bottom: 31px;
+}
+
+.shop-item__img {
+    width: 100%;
+}
+
+.shop__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.shop-item__in-stock {
+    text-align: center;
+    padding-left: 7px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.shop-item__in-stock:hover {
+    background: #42ff65;
+}
+
+.shop-item__in-stock_white {
+    letter-spacing: 0.1em;
+    background: #000000;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.shop-item__link {
+    display: block;
+    line-height: 18px;
+    margin-bottom: 13px;
+
+}
+.shop-item__link_black {
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.shop-item__favorites:hover {
+    fill: #be1d1e;
+}
+.shop-item__link_black:hover {
+    color: #89b7ff;
+}
+
+
+.shop-item__text-wrap {
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 17px;
+    position: relative;
+}
+
+.shop-item__favorites {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.shop-item__art_op {
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.shop-item__producer_op {
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.shop-item__producer-link {
+    opacity: 1;
+    transition: 0.1s ease-out 0.1s;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.shop-item__producer-link:hover {
+    text-decoration: none;
+}
+
+.shop-item__price {
+    displaY: inline-block;
+    margin-top: 10px;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.shop-item__price_black {
+    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.shop-item__price_black:hover {
+    color: #89b7ff;
+}
+
+.shop-item__old-price {
+    margin-left: 3px;
+    line-height: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: 0.1s ease-out 0.1s;
+
+}
+
+.shop-item__old-price:hover {
+    opacity: 0.7;
+}
+
+.shop-item__price-old_op {
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.3;
+    font-size: 14px;
+}
+
+/* Shop styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
