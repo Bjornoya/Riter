@@ -402,6 +402,45 @@ a {
 /* Header styles end */
 
 
+/* Assortment styles start */
+.assortment__container {
+    displaY: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.assortment-item {
+    text-align: center;
+}
+
+.assortment-item__img {
+    transition: 0.1s ease-out 0.1s;
+}
+
+.assortment-item__link {
+    padding-top: 14px;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.assortment-item p {
+    margin-bottom: 10px;
+}
+
+.assortment-item:hover .assortment-item__img {
+    opacity: 0.7;
+}
+.assortment-item:hover .assortment-item__link {
+    color: #89b7ff;
+}
+/* Assortment styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
