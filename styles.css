@@ -877,6 +877,12 @@ a {
     .slide__text {
         top: 45%;
     }
+    .advantages__container {
+        flex-wrap: wrap;
+    }
+    .advantages__advantages-item {
+        width: 49%;
+    }
 
 }
 
