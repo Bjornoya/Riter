@@ -750,6 +750,77 @@ a {
 /* Shop styles end */
 
 
+/* Advanced market styles start */
+
+.body__advanced-market {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 67px;
+}
+.advanced-market__advanced-market-item {
+    width: 49.9%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.advanced-market-item__img {
+    float: right;
+    mix-blend-mode: darken;
+}
+
+.advanced-market-item__link {
+    line-height: 38px;
+    position: absolute;
+    left: 8%;
+    top: 9%;
+    max-width: 50%;
+}
+
+.advanced-market-item__link_black {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.advanced-market-item__link_black:hover {
+    color: #89b7ff;
+}
+
+.advanced-market-item__text {
+    position: absolute;
+    top: 32%;
+    max-widtH: 42%;
+    left: 7%;
+}
+
+.advanced-market-item__text_op {
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+.advanced-market-item__btn {
+    padding: 12px 20px;
+    position: absolute;
+    top: 79%;
+    left: 8%;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.advanced-market-item__btn:hover {
+    opacity: 0.9;
+}
+
+.advanced-market-item_dark-bg {
+    background: #F3F3F3;
+}
+
+/* Advanced market styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
