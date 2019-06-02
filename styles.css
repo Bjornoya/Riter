@@ -994,6 +994,12 @@ a {
     .shop__container {
         justify-content: space-around;
     }
+    .advanced-market-item__text {
+        max-width: 50%;
+    }
+    .advanced-market-item__link {
+        max-width: 90%;
+    }
 
 }
 
@@ -1112,6 +1118,9 @@ a {
     }
     .shop__container {
         justify-content: center;
+    }
+    .advanced-market__advanced-market-item {
+        width: 100%;
     }
 
 }
