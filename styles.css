@@ -1290,6 +1290,21 @@ a {
     .advanced-market-item__link {
         max-width: 90%;
     }
+    .review-slides_op {
+        displaY: none;
+    }
+    .reviews-slider__review-slides {
+        margin-left: 20%;
+    }
+    .reviews-slider__headline {
+        margin-left: 5px;
+    }
+    .reviews-slider__arrows {
+        margin-left: 232px;
+    }
+    .reviews-slider__than-wrap {
+        margin-left: 5px;
+    }
 
 }
 
@@ -1432,6 +1447,27 @@ a {
     }
     .about__more-link {
         margin-right: 30px;
+    }
+    .reviews-slider__headline {
+        line-height: 28px;
+    }
+    .reviews-slider__headline_black {
+        font-size: 24px;
+    }
+    .reviews-slider__review-slides {
+        margin-left: 5%;
+    }
+    .reviews-slider__than-wrap {
+        line-height: 19px;
+    }
+    .reviews-slider__arrows {
+        margin: 0 auto;
+        displaY: block;
+        width: 70%;
+        margin-top: 40px;
+    }
+    .reviews-slider__than-wrap {
+        display: none;
     }
 
 }
