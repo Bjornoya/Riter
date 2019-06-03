@@ -821,6 +821,108 @@ a {
 /* Advanced market styles end */
 
 
+/* About styles styles start */
+
+.about {
+    background: url(img/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.about__body {
+    margin-top: 129px;
+}
+
+.about__wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__headline {
+    line-height: 18px;
+    margin-bottom: 34px;
+}
+
+.about__headline_black {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.about__link {
+    display: block;
+    line-height: 42px;
+    margin-bottom: 38px;
+}
+
+.about__link_black {
+    font-size: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+
+.about__text_black {
+    font-size: 16px;
+    line-height: 29px;
+    color: #000000;
+
+}
+
+.about__text-headline {
+    line-height: 21px;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 13px;
+}
+
+.about__text-headline_black {
+    font-family: 'FuturaNew';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+}
+
+.about__more-link {
+    display: inline-block;
+    margin-top: 37px;
+    margin-right: 35px;
+    line-height: 23px;
+}
+
+.about__more-link_black {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.about__more-link_black:hover {
+    color: #89b7ff;
+}
+
+.about__left-column {
+    display: inline-block;
+    width: 46%;
+    margin-right: 7%;
+    text-align: left;
+}
+
+.about__right-column {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    text-align: left;
+}
+
+/* About styles styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
@@ -1121,6 +1223,27 @@ a {
     }
     .advanced-market__advanced-market-item {
         width: 100%;
+    }
+    .about__link {
+        padding: 0 10%;
+        padding-bottom: 5%;
+        text-align: left;
+    }
+    .about__link_black {
+        font-size: 27px;
+    }
+    .about__left-column {
+        margin: 0;
+        padding: 0 10%;
+        width: 80%;
+    }
+    .about__right-column {
+        margin: 0;
+        padding: 0 10%;
+        width: 80%;
+    }
+    .about__more-link {
+        margin-right: 30px;
     }
 
 }
