@@ -1486,6 +1486,13 @@ a {
         padding-left: 18px;
         top: 59.5%;
     }
+    .advantages__container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .advantages__advantages-item {
+        width: 49%;
+    }
     .btn_white-text {
         font-size: 11px;
     }
@@ -1631,7 +1638,7 @@ a {
         flex-wrap: wrap;
     }
     .advantages__advantages-item {
-        width: 49%;
+        width: 100%;
     }
     .shop__container {
         justify-content: center;
