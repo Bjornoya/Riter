@@ -1313,6 +1313,7 @@ a {
 .blog__posts__blog__post {
     max-width: 357px;
     display: inline-block;
+    margin-bottom: 25px;
 }
 
 /* Blog styles end */
@@ -1512,6 +1513,10 @@ a {
     .reviews-slider__than-wrap {
         margin-left: 5px;
     }
+    .blog__link {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -1681,6 +1686,12 @@ a {
     }
     .sub__info-wrapper {
         margin-right: 32px;
+    }
+    .blog__posts {
+        justify-content: center;
+    }
+    .blog__link_black {
+        font-size: 32px;
     }
 
 }
