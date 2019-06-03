@@ -1186,6 +1186,138 @@ a {
 /* Hashtag styles end */
 
 
+/* Blog styles start */
+
+.blog {
+    background: #F9F9F9;
+}
+
+.blog__container {
+    padding-top: 83px;
+}
+
+.blog__link {
+    line-height: 42px;
+    max-widtH: 598px;
+    displaY: inline-block;
+    margin-right: 236px;
+    margin-left: 97px;
+}
+
+.blog__link_black {
+    font-size: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.blog__news-link {
+    line-height: 23px;
+    margin-right: 5px;
+}
+
+.blog__news-link_black {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.blog__news-link_black:hover {
+    color: #89b7ff;
+}
+
+.blog-post__date {
+    line-height: 16px;
+    margin-bottom: 12px;
+}
+
+.blog__posts {
+    margin-top: 79px;
+    displaY: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 74px;
+}
+
+.blog-post {
+    background: #ffff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.blog-post__date_black {
+    font-family: 'Georgia';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.blog-post__headline-link {
+    line-height: 21px;
+    margin-bottom: 4px;
+    display: inline-block;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.blog-post__headline-link:hover {
+    color: #89b7ff;
+}
+
+.blog-post__headline-link_black {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+
+.blog-post__text {
+    line-height: 20px;
+    margin-bottom: 58px;
+}
+
+.blog-post__text_op {
+    font-size: 13px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.blog-post__readmore-link {
+    line-height: 14px;
+    margin-right: 12px;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.blog-post__readmore-link:hover {
+    color: #89b7ff;
+}
+
+.blog-post__readmore-link_black {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+
+.blog-post__info-wrapper {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 71px;
+    padding-bottom: 20px;
+}
+.blog__posts__blog__post {
+    max-width: 357px;
+    display: inline-block;
+}
+
+/* Blog styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
