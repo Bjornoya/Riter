@@ -956,6 +956,161 @@ a {
 /* Our brands styles end */
 
 
+/* Reviews slider  styles start */
+
+.body__reviews-slider {
+    margin-top: 111px;
+}
+
+.reviews-slider_gray-bg {
+    background: #F7F7F7;
+}
+
+.reviews-slider__headline {
+    display: inline-block;
+    line-height: 42px;
+    max-width: 40%;
+    margin-left: 98px;
+    margin-top: 23px;
+}
+
+.reviews-slider__headline_black {
+    font-size: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.reviews-slider__link{
+    line-height: 12px;
+    margin-right: 9px;
+}
+
+.reviews-slider__link_black {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.reviews-slider__link_black:hover {
+    color: #89b7ff;
+}
+
+.reviews-slider__arrows {
+    displaY: inline-block;
+    margin-left: 376px;
+}
+
+.review-slider__arrow {
+    margin-lefT: 40px;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.review-slider__arrow:hover {
+    stroke: #89b7ff;
+}
+
+.review-slider__arrow_scaleX {
+    transform: scale(-1, 1);
+}
+
+.review-slider__arrow_op {
+    opacity: 0.5;
+}
+
+.reviews-slider__than-wrap {
+    margin-top: 25px;
+    margin-left: 97px;
+}
+
+.review-slides__review-slide {
+    margin-top: 66px;
+}
+
+.review-slide {
+    font-family: 'FuturaNew';
+    color: #000000;
+}
+
+.review-slide__headline {
+    margin-top: 18px;
+    displaY: inline-block;
+}
+
+.review-slide__headline_black {
+    font-size: 17px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.review-slide__headline_black:hover {
+    color: #89b7ff;
+}
+
+.review-slide__text {
+    margin-bottom: 3px;
+}
+
+.review-slide__text_upper {
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.review-slide__link_gray {
+    font-size: 16px;
+    line-height: 20px;
+    color: #626160;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.review-slide__link_gray:hover {
+    color: #000000;
+}
+
+.review-slide__img {
+    float: left;
+    width: 27%;
+    border-radius: 50%;
+    margin-left: -33px;
+}
+
+.review-slide__text-cloud {
+    font-size: 12px;
+    line-height: 23px;
+    color: #000000;
+    padding-top: 33px;
+    padding-right: 32px;
+    padding-left: 34px;
+    padding-bottom: 30px;
+    max-widtH: 391px;
+    margin-top: 20px;
+    letter-spacing: 0.02em;
+    margin-bottom: 99px;
+}
+
+.review-slide__text-cloud_white-bg {
+    background: #FFFFFF;
+    box-shadow: -10px 14px 60px rgba(0, 0, 0, 0.07);
+    border-radius: 0px 50px 50px 50px;
+}
+
+.reviews-slider__review-slides {
+    display: inline-block;
+}
+
+.review-slides_op {
+    opacity: 0.6;
+}
+
+/* Reviews slider styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
