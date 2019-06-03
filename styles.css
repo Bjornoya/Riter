@@ -821,7 +821,7 @@ a {
 /* Advanced market styles end */
 
 
-/* About styles styles start */
+/* About styles start */
 
 .about {
     background: url(img/Ellipse.svg);
@@ -920,7 +920,40 @@ a {
     text-align: left;
 }
 
-/* About styles styles end */
+/* About styles end */
+
+
+/* Our brands styles start */
+
+.body__brands {
+    margin-top: 145px;
+}
+
+.brands__headline {
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.brands__headline_black {
+    font-size: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+
+.brands__image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brands__img {
+    margin-bottom: 36px;
+}
+
+/* Our brands styles end */
 
 
 /* Bootstrap Grid styles start */
