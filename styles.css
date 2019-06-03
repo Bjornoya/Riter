@@ -1111,6 +1111,81 @@ a {
 /* Reviews slider styles end */
 
 
+/* Hashtag styles start */
+
+.hashtag {
+    background-image: url("img/sub.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.sub__text {
+    line-height: 18px;
+}
+
+.sub__text_op {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.2;
+}
+
+.sub__info {
+    display: inline-block;
+    padding-left: 26px;
+    padding-right: 29px;
+    padding-bottom: 26px;
+    padding-top: 27px;
+    margin-top: 77px;
+    margin-bottom: 76px;
+    margin-left: 131px;
+}
+
+.sub__info_bg-white {
+    background: #FFFFFF;
+    box-shadow: -20px 4px 54px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.sub__info-wrapper {
+    display: inline-block;
+    margin-right: 77px;
+}
+
+.sub__link {
+    line-height: 37px;
+}
+
+.sub__link_black {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.sub__link_black:hover {
+    color: #89b7ff;
+}
+
+.sub__btn {
+    padding-top: 17px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 13px;
+    vertical-align: super;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.sub__btn:hover {
+    opacity: 0.8;
+}
+
+/* Hashtag styles end */
+
+
 /* Bootstrap Grid styles start */
 .container {
     max-width: 1134px;
