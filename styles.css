@@ -1544,6 +1544,12 @@ a {
     .reviews-slider__than-wrap {
         display: none;
     }
+    .sub__info {
+        margin-left: 10px;
+    }
+    .sub__info-wrapper {
+        margin-right: 32px;
+    }
 
 }
 
