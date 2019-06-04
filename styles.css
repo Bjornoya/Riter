@@ -1241,7 +1241,7 @@ a {
     displaY: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 74px;
+    padding-bottom: 46px;
 }
 
 .blog-post {
@@ -1317,6 +1317,161 @@ a {
 }
 
 /* Blog styles end */
+
+
+/* Footer styles start */
+
+.footer {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: 'FuturaNew';
+    font-size: 10px;
+}
+
+.footer__left {
+    display: inline-block;
+}
+
+.footer__container {
+    padding-top: 61px;
+}
+
+.footer__footer-nav {
+    display: inline-block;
+    vertical-align: top;
+    widtH: 22.5%;
+    margin-bottom: 57px;
+}
+
+.footer-nav {
+    text-transform: uppercase;
+}
+
+.footer-nav__link {
+    margin-bottom: 7px;
+    display: block;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.footer-nav__link:hover {
+    color: #89b7ff;
+}
+
+.footer-nav__link_white {
+    color: #FFFFFF;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+}
+
+.footer-nav__link_big {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.footer__right {
+    display: inline-block;
+    margin-right: -5%;
+    vertical-align: top;
+}
+
+.footer-nav__link_right {
+    text-align: right;
+}
+
+.email-form {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border-bottom: 2px solid #fff;
+}
+
+.footer-nav__email-form {
+    margin-left: 22px;
+}
+
+.email-form__input {
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+
+.email-form__input__transp {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.email-form__input__transp::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.email-form__btn {
+    margin-lefT: 98px;
+    vertical-align: middle;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.email-form__btn:hover {
+    cursor: pointer;
+    background: #197e29;
+}
+
+.email-form__btn_gray-bg {
+    background: #1D1C1C;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: none;
+}
+
+.email-form__svg {
+    padding: 4px 2px 4px 2px;
+}
+
+.footer-nav__socials {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.socials__instagram {
+    margin-right: 10px;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.socials__instagram:hover {
+    fill: #e95950;
+}
+
+.socials__facebook {
+    transition: 0.1s ease-out 0.1s;
+}
+
+.socials__facebook:hover {
+    fill: #3b5998;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 49px;
+    padding-bottom: 26px;
+}
+
+.policy {
+    font-size: 10px;
+    line-height: 6px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    transition: 0.1s ease-out 0.1s;
+}
+
+.policy:hover {
+    color: #89b7ff;
+}
+    /* Footer styles end */
 
 
 /* Bootstrap Grid styles start */
