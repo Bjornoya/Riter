@@ -348,6 +348,11 @@ a {
 .shopping-cart__link {
     line-height: 18px;
     transition: all 0.3s ease-out;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+    display: inline-block;
 }
 
 .shopping-cart__link_black {
@@ -382,7 +387,7 @@ a {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 80px;
+    max-width: 20px;
     transition: 0.1s ease-out 0.1s;
 }
 
@@ -709,6 +714,10 @@ a {
 
 .shop-item__price {
     displaY: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 119px;
     margin-top: 10px;
     transition: 0.1s ease-out 0.1s;
 }
@@ -727,6 +736,11 @@ a {
 }
 
 .shop-item__old-price {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 79px;
+    display: inline-block;
     margin-left: 3px;
     line-height: 16px;
     font-weight: 600;

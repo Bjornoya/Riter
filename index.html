@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,9 +7,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Riter Academy</title>
     <link rel="stylesheet" href="styles.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALR1FVA6oO_Jy16ofZJeB98BQR6JbHxKk&language=ru&region=RU"&callback=initMap" type="text/javascript"></script>
+    <script type="text/javascript">
+        var geocoder;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+        }
+        //Get the latitude and the longitude;
+        function successFunction(position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            codeLatLng(lat, lng)
+        }
+
+        function errorFunction(){
+            document.getElementsByClassName('contacts-city__name')[0].innerHTML = 'Неизвестно';
+        }
+
+        function initialize() {
+            geocoder = new google.maps.Geocoder();
+
+
+
+        }
+
+        function codeLatLng(lat, lng) {
+
+            var latlng = new google.maps.LatLng(lat, lng);
+            geocoder.geocode({'latLng': latlng}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    console.log(results)
+                    if (results[1]) {
+                        //find country name
+                        for (var i=0; i<results[0].address_components.length; i++) {
+                            for (var b=0;b<results[0].address_components[i].types.length;b++) {
+
+                                //there are different types that might hold a city admin_area_lvl_1 usually does in come cases looking for sublocality type will be more appropriate
+                                if (results[0].address_components[i].types[b] == "administrative_area_level_2") {
+                                    //this is the object you are looking for
+                                    city= results[0].address_components[i];
+                                    break;
+                                }
+                            }
+                        }
+                        //city data
+                        cityData = city.short_name;
+                        cityDataClear = (cityData.substring(3));
+                        document.getElementsByClassName('contacts-city__name')[0].innerHTML = cityDataClear;
+
+
+                    } else {
+                        alert("Нет результатов");
+                    }
+                } else {
+                    alert("Geocoder failed due to: " + status);
+                }
+                if (cityDataClear == 'Москва') {
+                    document.getElementsByClassName('phone__link')[0].innerHTML = "8 800 2000 600";
+                    document.getElementsByClassName('phone__link')[0].href = "tel:+78002000600";
+                } else {
+                    document.getElementsByClassName('phone__link')[0].innerHTML = "7 900 0000 777";
+                    document.getElementsByClassName('phone__link')[0].href = "tel:+79000000777";
+                }
+            });
+        }
+    </script>
 </head>
 <body>
-    <header class="header">
+
+<header class="header">
         <div class="container">
             <div class="navigation header__navigation">
                 <nav class="nav navigation__nav">
@@ -38,7 +105,7 @@
                         <svg class="phone__img" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="phone__img" d="M19.9748 2.7416L17.2237 0L11.5104 5.70382L13.7253 7.99126C13.3541 8.65022 12.5487 9.91247 11.1761 11.285C9.80337 12.6578 8.53189 13.4724 7.86666 13.8495L5.62409 11.6355L0 17.2261L2.73606 19.9804C3.78192 21.0262 5.37328 21.2973 6.69595 20.6549C8.71432 19.6746 11.7604 17.8658 14.8104 14.8159C17.8603 11.766 19.669 8.71986 20.6493 6.70149C20.8816 6.22325 20.9945 5.70994 20.9945 5.19995C20.9945 4.29941 20.6425 3.40929 19.9748 2.7416ZM19.1747 5.98519C18.2493 7.89049 16.5399 10.768 13.6512 13.6567C10.7624 16.5455 7.88491 18.2549 5.97969 19.1803C5.2851 19.5176 4.44735 19.3733 3.89713 18.8231L2.31795 17.2334L5.62815 13.9431L7.53861 15.8291L8.04975 15.6015C8.1328 15.5645 10.1097 14.67 12.3354 12.4442C14.5626 10.217 15.4386 8.25688 15.4747 8.17448L15.6964 7.67019L13.8112 5.72331L17.2248 2.31533L18.8164 3.90136C19.3679 4.45363 19.5119 5.29096 19.1747 5.98519Z" fill="black"/>
                         </svg>
-                        <p class="phone__text phone__text_opacity phone__text_uppercase">Ваш город: Пермь</p>
+                        <p class="phone__text phone__text_opacity phone__text_uppercase">Ваш город: <span class="contacts-city__name">Пермь</span></p>
                         <a href="tel:+74952903484" class="phone__link phone__link_black">+7 495 290-34-84</a>
                     </div>
                     <div class="email userarea__email">
@@ -633,7 +700,7 @@
                 <a href="#" class="policy">Политика конфиденциальности</a>
             </div>
     </footer>
-</body>
+<body onload="initialize()">
 </html>
 
 
