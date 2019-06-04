@@ -1869,6 +1869,10 @@ a {
     .blog__posts {
         justify-content: center;
     }
+    .blog__link {
+        display: block;
+        margin-right: 0px;
+    }
     .blog__link_black {
         font-size: 32px;
     }
